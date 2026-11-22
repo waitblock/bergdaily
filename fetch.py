@@ -19,7 +19,7 @@ for location in locations:
     if location["location_name"] == berg_name:
         berg_id = location["location_number"]
         break
-# If unavailable,
+# If unavailable, report error
 if not berg_id:
     raise KeyError("The location ID of Annenberg is unavailable from the API.")
 
